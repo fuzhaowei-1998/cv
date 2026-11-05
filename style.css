@@ -97,4 +97,47 @@ footer { background: var(--deep); color: var(--paper); padding: 3rem 0; }
   .row { grid-template-columns: 8.5rem minmax(0, 1fr); padding: .4rem 0; }
   .featured { padding: .65rem; margin-bottom: 1rem; }
       }
+/* 寬螢幕側邊導覽 */
+@media screen and (min-width: 70rem) {
+  body {padding-left: 14rem; }
+
+  .bar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: 14rem;
+    overflow-y: auto;
+    background: var(--paper);
+    border-right: 1px solid var(--line);
+    border-bottom: 0;
+  }
+
+  .bar nav.wrap {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 2rem 1.25rem;
+  }
+
+  .bar .brand {
+    display: block;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .bar nav ul {
+    display: grid;
+    gap: .2rem;
+  }
+
+  .bar nav ul a {
+    display: block;
+    padding: .5rem .65rem;
+  }
+
+  .bar nav ul a:hover,
+  .bar nav ul a:focus-visible {
+    background: #f1ece4;
+  }
+}
 

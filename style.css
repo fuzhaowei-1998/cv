@@ -13,7 +13,7 @@ body { margin: 0; background: var(--paper); color: var(--navy); font: 1rem/1.65 
 a { color: var(--copper); text-underline-offset: .24em; overflow-wrap: anywhere; }
 a:hover { text-decoration-thickness: .15em; }
 :focus-visible { outline: 3px solid #c77548; outline-offset: 5px; }
-.wrap { width: min(73rem, calc(100% - 4rem)); margin-inline: auto; }
+.wrap {width: calc(100% - 6rem); margin-inline: auto; }
 .skip { position: absolute; top: .75rem; left: .75rem; transform: translateY(-250%); padding: .65rem; background: white; z-index: 2; }
 .skip:focus { transform: none; }
 .bar { border-bottom: 1px solid var(--line); }

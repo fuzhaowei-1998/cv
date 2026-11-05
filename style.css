@@ -89,4 +89,20 @@ footer { background: var(--deep); color: var(--paper); padding: 3rem 0; }
   h2, h3, h4 { break-after: avoid; }
   .row { grid-template-columns: 8.5rem minmax(0, 1fr); padding: .4rem 0; }
   .featured { padding: .65rem; margin-bottom: 1rem; }
+@media screen {
+  .featured {
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .featured h4 {
+    font-size: clamp(1.15rem, 2vw, 1.5rem);
+    margin: .4rem 0;
+  }
+
+  .featured p {
+    margin: .25rem 0;
+  }
+}
+
 }
